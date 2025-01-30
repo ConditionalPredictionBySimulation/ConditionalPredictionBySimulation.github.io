@@ -159,7 +159,8 @@
         <img src="static/images/ail_setup.png" alt="Trainings Setup"/>
         <div class="content">
           <p>
-            We employ Adversarial Inverse Reinforcement Learning (AIRL) [tbd] to learn the behavior model. AIRL combines Reinforcement Learning (RL) with the ideas of Generative Adversarial Networks and applies them to the task of Imitation Learning.
+            We employ Adversarial Inverse Reinforcement Learning (AIRL) [<a href="https://arxiv.org/abs/1710.11248" target="_blank">1</a>] to learn the behavior model. 
+            AIRL combines Reinforcement Learning (RL) with the ideas of Generative Adversarial Networks [<a href="https://arxiv.org/abs/1406.2661" target="_blank">2</a>] and applies them to the task of Imitation Learning.
             Specifically, the behavior model is trained via RL maximizing a reward signal, with the reward signal being approximated by a discriminator model.
             The discriminator is trained to assign higher scores to more realistic samples.
           </p>
