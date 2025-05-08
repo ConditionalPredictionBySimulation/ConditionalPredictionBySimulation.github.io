@@ -164,7 +164,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-2"> Training Setup</h2>
         <img src="static/images/ail_setup.png" alt="Training Setup"/>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             We employ Adversarial Inverse Reinforcement Learning (AIRL) [<a href="https://arxiv.org/abs/1710.11248" target="_blank">1</a>] to learn the behavior model. 
             AIRL combines Reinforcement Learning (RL) with the ideas of Generative Adversarial Networks [<a href="https://arxiv.org/abs/1406.2661" target="_blank">2</a>] and applies them to the task of Imitation Learning.
@@ -187,7 +187,7 @@
         <h2 class="title is-2"> Quantitative Prediction Results</h2>
         
         <img src="static/images/fas_histo.png" alt=""/>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             Normalized histogram of executed actions of the learned behavior model (blue) and the corresponding ground truth vehicles (orange). 
             The large overlap indicates that the policy effectively captures the correct distribution of actions. The peak at 0 m/s<sup>2</sup> occurs due to the preprocessing, where for vehicles at standstill (e.g., waiting at a yield line) both their acceleration and steering angle were set to zero.
@@ -195,7 +195,7 @@
         </div>
 
         <img src="static/images/fas_table.JPG" alt=""/>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             Prediction performance after 10s: Each cell shows the mean and standard deviation of seven models trained with different random seeds.
             The BC models were trained by minimizing the negative log-likelihood of the real-world drivers' actions under the predicted action distribution.
@@ -216,7 +216,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-2"> Conditional Prediction: Example Situations</h2>
 
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             To demonstrate that the proposed prediction model is capable of making conditional predictions, we modify the planned trajectories of individual vehicles and predict the remaining vehicles.
             Similarly, an automated vehicle could query the prediction model with different planned trajectories for itself and select a plan based on the corresponding predictions.
@@ -224,7 +224,7 @@
         </div>
         
         <h2 class="subtitle is-3">Example 1: Unsignalized Intersection with All-Way Stop</h2>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             In this scenario, the pink vehicle (ID 6) intends to turn right, while the oncoming red vehicle (ID 3) intends to turn left towards the same exit. 
             Assuming that ID 6 is an automated vehicle, it must decide whether to proceed before or yield to ID 3.
@@ -263,7 +263,7 @@
         </div>
 
         <h2 class="subtitle is-3">Example 2: Roundabout</h2>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             In this scenario, the green vehicle (ID 2) should yield to the blue vehicle (ID 0). 
             To showcase the prediction model’s reactiveness, we also predict the traffic evolution if ID 2 enters the roundabout, cutting off ID 0.
@@ -301,7 +301,7 @@
         </div>
 
         <h2 class="subtitle is-3">Example 3: Merging</h2>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             In this scenario, the gray vehicle (ID 7) is trying to merge onto the left lane, which requires cooperation from the yellow vehicle (ID 8). 
             The predictions below show ID 8 either cooperating in one case or not in the other.
